@@ -1,0 +1,103 @@
+SQL> create table employee(empno number(5),empname varchar2(10),empdesig varchar2(50),empsal int);
+
+Table created.
+
+SQL> SQL> insert into employee values(1,'chaithu','labassistant',15000);
+SP2-0734: unknown command beginning "SQL> inser..." - rest of line ignored.
+SQL>  insert into employee values(1,'divya','labassistant',1500);
+
+1 row created.
+
+SQL>  insert into employee values(2,'sree','officer',15000);
+
+1 row created.
+
+SQL>  insert into employee values(3,'sreevani','aacounter',5000);
+
+1 row created.
+
+SQL>  insert into employee values(4,'bhuvana','teacher',17000);
+
+1 row created.
+
+SQL>  insert into employee values(5,'laya','teacher',17000);
+
+1 row created.
+
+SQL>  insert into employee values(6,'vidya','engineer',25000);
+
+1 row created.
+
+SQL>  insert into employee values(7,'pushpa','lawyer',50000);
+
+1 row created.
+
+SQL>  insert into employee values(8,'swapna','doctor',55000);
+
+1 row created.
+
+SQL>  insert into employee values(9,'devi','lecture',15000);
+
+1 row created.
+
+SQL>  insert into employee values(10,'riyasri','army',70000);
+
+1 row created.
+
+SQL> select *from employee;
+
+     EMPNO EMPNAME    EMPDESIG
+---------- ---------- --------------------------------------------------
+    EMPSAL
+----------
+         1 divya      labassistant
+      1500
+
+         2 sree       officer
+     15000
+
+         3 sreevani   aacounter
+      5000
+
+
+     EMPNO EMPNAME    EMPDESIG
+---------- ---------- --------------------------------------------------
+    EMPSAL
+----------
+         4 bhuvana    teacher
+     17000
+
+         5 laya       teacher
+     17000
+
+         6 vidya      engineer
+     25000
+
+
+     EMPNO EMPNAME    EMPDESIG
+---------- ---------- --------------------------------------------------
+    EMPSAL
+----------
+         7 pushpa     lawyer
+     50000
+
+         8 swapna     doctor
+     55000
+
+         9 devi       lecture
+     15000
+
+
+     EMPNO EMPNAME    EMPDESIG
+---------- ---------- --------------------------------------------------
+    EMPSAL
+----------
+        10 riyasri    army
+     70000
+
+
+10 rows selected.
+
+SQL> commit;
+
+Commit complete.
